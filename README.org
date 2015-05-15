@@ -1,0 +1,12 @@
+[[https://play.rust-lang.org][Rust Playpen]] from within Emacs
+
+*Warning:* I'm new to emacs-lisp, this is my first elisp toy. It just works, and I know a lot of work needs to be done.
+
+** How to play
+1. Install request by =M-x package-install request=
+2. Open /playpen-mode.el/ and =M-x eval-buffer=
+3. Open a new buffer, write a rust program, and then =M-x play-rust=. Wait a second, the result will be in *Result* buffer.
+
+** Todo
++ Make this a minor mode (For now I don't know how to do it)
++ Define different keybindings for compilation and evaluation
