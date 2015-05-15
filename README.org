@@ -4,9 +4,15 @@
 
 ** How to play
 1. Install request by =M-x package-install request=
-2. Open /playpen-mode.el/ and =M-x eval-buffer=
-3. Open a new buffer, write a rust program, and then =M-x play-rust=. Wait a second, the result will be in *Result* buffer.
+2. Add /playpen-mode.el/ to your load path
+3. Open a new buffer, turn on playpen-mode by =M-x playpen-mode=, write a rust program.
+   If you have rust-mode enabled, playpen-mode will turn on automatically.
+4. Evaluate current buffer program by =C-c C-c e=
+   Generate asm code from current buffer by =C-c C-c a=
+   Generate llvm-ir code from current buffer by =C-c C-c i=
 
 ** Todo
-+ Make this a minor mode (For now I don't know how to do it)
-+ Define different keybindings for compilation and evaluation
++ +Make this a minor mode (For now I don't know how to do it)+
++ +Define different keybindings for compilation and evaluation+
++ Generate a new *Result* buffer each time
++ Adjust *Result* buffer proper mode according to the result, namely =compilation-mode=, =asm-mode=, =llvm-mode=
